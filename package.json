@@ -1,0 +1,23 @@
+{
+  "name": "gustati",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de um sistema Desktop Pra gestão de ordem de serviços de um assistência técnica de computadore de notbooks.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgdcd08/gustati.git"
+  },
+  "author": "Luiz Gustavo de Carvalho Dagnese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgdcd08/gustati/issues"
+  },
+  "homepage": "https://github.com/lgdcd08/gustati#readme",
+  "devDependencies": {
+    "electron": "^34.2.0"
+  }
+}
