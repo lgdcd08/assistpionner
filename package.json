@@ -1,5 +1,5 @@
 {
-  "name": "gustati",
+  "name": "assistpionnes",
   "version": "1.0.0",
   "description": "Desenvolvimento de um sistema Desktop Pra gestão de ordem de serviços de um assistência técnica de computadore de notbooks.",
   "main": "main.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lgdcd08/gustati.git"
+    "url": "git+https://github.com/lgdcd08/assistpionnes.git"
   },
   "author": "Luiz Gustavo de Carvalho Dagnese",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lgdcd08/gustati/issues"
+    "url": "https://github.com/lgdcd08/assistpionnes/issues"
   },
-  "homepage": "https://github.com/lgdcd08/gustati#readme",
+  "homepage": "https://github.com/lgdcd08/assistpionnes#readme",
   "devDependencies": {
     "electron": "^34.2.0"
   }
