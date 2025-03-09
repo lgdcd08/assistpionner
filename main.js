@@ -1,6 +1,6 @@
 console.log("Processo principal")
 
-const { app, BrowserWindow, nativeTheme, Menu } = require('electron')
+const { app, BrowserWindow, nativeTheme, Menu, ipcMain } = require('electron')
 const path = require('node:path')
 // Janela principal
 let win
@@ -12,17 +12,18 @@ const createWindow = () => {
         height: 600,
         //autoHideMenuBar: true,
         //minimizable: false,
-        resizable: false
+        resizable: false,
         
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
-    })
+    }
+})
 
     // menu personalizado
 Menu.setApplicationMenu(Menu.buildFromTemplate(template))
 
     win.loadFile('./src/views/index.html')
-}
+
 // menu personalizado
 Menu.setApplicationMenu(Menu.buildFromTemplate(template))
 
@@ -40,7 +41,7 @@ ipcMain.on('os-window', () => {
 function aboutWindow() {
     nativeTheme.themeSource = 'light'
     const main = BrowserWindow.getFocusedWindow()
-   // let about
+    let about
      if (main) {
         // Criar a janela sobre
         about = new BrowserWindow({
@@ -88,6 +89,9 @@ function osWindow() {
       modal: true
     })
   }
+  os.loadFile('./src/views/os.html')
+  os.center()
+}
 
 // Iniciar a aplicação
 app.whenReady().then(() => {
@@ -118,6 +122,8 @@ const template = [
             { label: 'OS', click: () => osWindow() },
             { type: 'separator' },
             { label: 'Sair', click: () => app.quit(), accelarator: 'Alt+F4' },
+        ]
+    },
     {
         label: 'Relatórios',
         submenu: [

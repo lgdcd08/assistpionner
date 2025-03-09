@@ -7,7 +7,7 @@ console.log("Processo de Rendenização")
 
 function clientes() {
    //console.log("teste do botão cliente")
-   api.clientesWindow()
+   api.clientWindow()
 }
 function os() {
     //console.log("teste do botão os")

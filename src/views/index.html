@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Assistência Pionner</title>
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-     <link rel="stylesheet" href="../public/css/style.css" class="css">
+    <link rel="stylesheet" href="../public/css/style.css" class="css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
+
 <body>
-    <div class="container button">
-        <a src="../public/img/dj_icon.png" alt="clientes" title="Cadastro de clientes"></a>
-        <img src="../public/img/mixer_icon.png" alt="computador" title="Emissão de OS">
-    </div>
+    <main>
+        <div class="container button">
+            <img src="../public/img/dj_icon.png" alt="clientes" title="Cadastro de clientes" onclick="clientes()">
+            <img src="../public/img/mixer_icon.png" alt="computador" title="Emissão de OS" onclick="os()">
+        </div>
+    </main>
     <footer>
         <p id="dataAtual"></p>
     </footer>
 
     <!--BOOTSTRAP-->
     <!--ligar o bootstrap offline caso o cliente nao tenha internet-->
-    <script src="../public/js/bootstrap.bundle.min.js"></script> 
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
     <script src="../public/js/script.js"></script>
     <script src="renderer.js"></script>
 </body>
+
 </html>
