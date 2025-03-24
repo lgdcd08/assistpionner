@@ -9,14 +9,18 @@
 
 footer {
     width: 100%;
-    height: 40px;
-    text-align: center;
+    height: 55px;   
     background-color: #0078d7;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
+
 
 footer p {
     color: #f5f5fa;
     padding-top: 7px;
+    font-size: 1.2em;  
 }

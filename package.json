@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/lgdcd08/assistpionnes#readme",
   "devDependencies": {
-    "electron": "^34.2.0"
+    "electron": "^34.3.4"
+  },
+  "dependencies": {
+    "mongoose": "^8.13.0"
   }
 }
