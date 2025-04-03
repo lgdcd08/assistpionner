@@ -1,5 +1,5 @@
 {
-  "name": "assistpionnes",
+  "name": "assistpionner",
   "version": "1.0.0",
   "description": "Desenvolvimento de um sistema Desktop Pra gestão de ordem de serviços de um assistência técnica de computadore de notbooks.",
   "main": "main.js",
@@ -9,18 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lgdcd08/assistpionnes.git"
+    "url": "git+https://github.com/lgdcd08/assistpionner.git"
   },
   "author": "Luiz Gustavo de Carvalho Dagnese",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lgdcd08/assistpionnes/issues"
+    "url": "https://github.com/lgdcd08/assistpionner/issues"
   },
-  "homepage": "https://github.com/lgdcd08/assistpionnes#readme",
+  "homepage": "https://github.com/lgdcd08/assistpionner#readme",
   "devDependencies": {
     "electron": "^34.3.4"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "jspdf": "^3.0.1",
     "mongoose": "^8.13.0"
   }
 }
